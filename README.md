@@ -37,7 +37,24 @@ flowchart LR
 
 ## Resultados
 
-> Depois de rodar a avaliação, cole aqui a tabela de `resultados/avaliacao.md` e os 2 ou 3 achados principais do dashboard.
+Coleta de 2.000 avaliações recentes (1.000 por app) e avaliação em 100 delas, com rótulos pré-preenchidos pelo Claude e revisados manualmente. Detalhes em [`resultados/avaliacao.md`](resultados/avaliacao.md).
+
+| Métrica | Resultado |
+|---|---|
+| Acurácia de sentimento, Gemini | **97%** |
+| Acurácia de sentimento, só pelas estrelas | 92% |
+| Temas: F1 (micro) | **87%** |
+| Avaliações com pelo menos 1 tema correto | 92% |
+
+**Achados do dashboard**
+- Atendimento/suporte e pagamento/reembolso lideram as reclamações nos dois apps, cada um em 25% a 33% das avaliações negativas.
+- Atraso na entrega pesa mais na Rappi (~28% das negativas, contra ~17% no iFood); cupons e promoções pesam mais no iFood (~17% contra ~6%).
+- No iFood, quem cita pedido errado, bugs ou problemas de conta dá cerca de 2,7 estrelas a menos que a média.
+
+**O que a avaliação ensinou**
+- O tema "Outro" teve recall de 46%: avaliações sobre o app não atender a cidade não têm categoria própria. Próxima versão: criar `cobertura_regiao`.
+- "Atendimento e suporte" teve precisão de 64%: o modelo marca suporte quando a pessoa só não conseguiu cancelar. Ajuste: deixar essa fronteira explícita no prompt.
+- As 1.000 avaliações de cada app cobrem períodos diferentes, porque o iFood recebe muito mais avaliações por dia. Comparações entre os apps são indicativas.
 
 ## Como rodar
 
