@@ -4,7 +4,8 @@ Coleta as avaliações públicas de apps de delivery na Google Play, classifica 
 
 Hoje compara **iFood** e **Rappi**. Outros apps entram com uma linha em `radar/config.py`.
 
-> 📸 _Coloque aqui um print do dashboard com os dados reais._
+<img width="1917" height="909" alt="streamlit-ifood" src="https://github.com/user-attachments/assets/f85b4a5c-8c19-4d25-ac96-d68924653aaf" />
+
 
 ## O problema
 
