@@ -1,0 +1,6 @@
+.env
+__pycache__/
+.pytest_cache/
+.venv/
+# Avaliações coletadas e rótulos ficam fora do repositório (textos de terceiros)
+data/
